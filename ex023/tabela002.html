@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 740px;
+            border-collapse: collapse;
+        }
+        td, th{
+            height: 5px;
+            border: 1px solid black;
+            padding: 10px;   
+        }
+        thead, tfoot{
+            background-color: gray;
+            padding: 10px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        .posicao{
+            text-align: center;
+        }
+        .numero{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.525);
+        }
+        tbody>tr:nth-child(2n) {
+            background-color: rgba(255, 68, 0, 0.54);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia de tabelas grandes
+        TABLE
+        CAPTION - legenda da tabela
+          THEAD
+              TR,TD,TH
+          TBODY
+              TR,TD,TH
+          TFOOT
+              TR,TD,TH
+    -->
+    <table>
+        <caption>População das unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População 2021</th>
+                <th scope="col">País comparável(habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="numero">46 649 132</td>
+                <td> <img src="../ex023/paises/33px-Flag_of_Spain.svg (1).jpg" alt=""> Espanha (46 439 864)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="numero">21 411 923</td>
+                <td><img src="../ex023/paises/Flag_of_Sri_Lanka.svg (1).jpg" alt=""> Sri Lanka (20 675 000)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 463 349</td>
+                <td><img src="../ex023/paises/33px-Flag_of_the_United_Arab_Emirates.jpg" alt=""> Síria (17 500 658)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="numero">14 985 284</td>
+                <td><img src="../ex023/paises/33px-Flag_of_Chad.svg.png" alt=""> Chade (14 037 000)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="numero">11 597 484</td>
+                <td><img src="../ex023/paises/Bandera_de_Bolivia_(Estado).svg.png" alt=""> Bolívia (11 410 651)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 466 630</td>
+                <td><img src="../ex023/paises/Flag_of_Belgium_(civil).jpg" alt=""> Bélgica (11 250 659)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">7</td>
+                <td>Pernambuco</td>
+                <td class="numero">9 674 793</td>
+                <td><img src="../ex023/paises/Flag_of_Belarus.jpg" alt=""> Bielorrússia (9 485 300)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td>Ceará</td>
+                <td class="numero">9 240 580</td>
+                <td><img src="../ex023/paises/33px-Flag_of_the_United_Arab_Emirates.jpg" alt=""> Emirados Árabes Unidos (9 157 000)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td>Pará</td>
+                <td class="numero">8 777 124</td>
+                <td><img src="../ex023/paises/Flag_of_Austria.jpg" alt=""> Áustria (8 602 112)</img></td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td>Santa Catarina</td>
+                <td class="numero">7 338 473</td>
+                <td><img src="../ex023/paises/33px-Flag_of_Serbia.svg.webp" alt=""> Sérvia (7 114 393)</img></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <td class="posicao">---------</td>
+            <th scope="row">Total de habitantes</td>
+            <td class="numero"><strong>158 604 772</strong></td>
+            <td>-------------------------------------------</td>
+
+        </tfoot>
+    </table>
+    <h2>Texto de Exemplo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem blanditiis fugiat vero sit? Dicta nostrum ipsum cupiditate debitis possimus harum? Aperiam autem molestiae totam quia voluptatibus fugit dolorum fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod fuga molestias cumque impedit quas libero recusandae quos, quibusdam facilis laborum dolores reprehenderit enim porro blanditiis itaque ullam mollitia asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam soluta explicabo incidunt dolor rerum repudiandae et, laudantium aspernatur molestias ratione id culpa sed non maxime voluptatum earum! Ratione, iste.</p>
+</body>
+</html>
